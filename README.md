@@ -12,4 +12,4 @@ https://ibb.co/DQngLmg
 
 
 # Видаляємо контакт та виводимо в консоль об'єкт видаленого контакту або null, якщо контакту з таким id не існує.
-https://ibb.co/j9CvZxw
+https://ibb.co/TT2X6yh

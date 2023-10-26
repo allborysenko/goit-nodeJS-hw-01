@@ -27,15 +27,18 @@ async function getContactById(contactId) {
 async function removeContact(contactId) {
   const contacts = await readContacts();
   const index = contacts.findIndex((contact) => contact.id === contactId);
-  if (index !== -1) {
+  if (index === -1) {
     return null;
   }
   const newContacts = [
-    ...contacts.splice(0, index),
-    ...contacts.splice(index + 1),
+    ...contacts.slice(0, index),
+    ...contacts.slice(index + 1),
   ];
   await writeContacts(newContacts);
   return contacts[index];
+
+
+
 }
 
 async function addContact(contact) {
